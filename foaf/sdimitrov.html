@@ -1,0 +1,87 @@
+
+<html>
+<head>
+  <title>FOAF of Stanislav Dimitrov</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="foaf_person">
+  <?xml version="1.0"?>
+  <!-- So what the heck is this?  Its a Friend of a Friend document -->
+  <rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dcterms="http://purl.org/dc/terms" 
+        >
+
+    <foaf:Person rdf:ID="sdimitrov">
+      <span class="profile_img">
+        <foaf:img rdf:resource="http://api.randomuser.me/portraits/med/men/1.jpg"><img src="http://api.randomuser.me/portraits/med/men/1.jpg"/></foaf:img>  
+      </span>
+      <span class="profile_info">
+        <foaf:name>Name: "Stanislav Dimitrov"</foaf:name><br>
+        <foaf:title>Title: Mr.</foaf:title><br>
+        <foaf:firstName>First name: Stanislav</foaf:firstName><br>
+        <foaf:surname>Surname: Dimitrov</foaf:surname><br>
+        <foaf:mbox rdf:resource="mailto:s_dimitrov@mail.com<br>">Email: s_dimitrov@mail.com<br></foaf:mbox>
+        <foaf:nick>Nickname: Stanislav</foaf:nick><br>
+        <foaf:mbox_sha1sum>Sha unique key: 0bf79d60aad939c6f9b09eecc861a96f6e6992bf</foaf:mbox_sha1sum> <!-- my main address --><br>
+        <foaf:phone rdf:resource="tel:+359-898-859814">Tel: +359-898-859814</foaf:phone><br>
+        <dcterms:issued>Birth date: 1993-09-01</dcterms:issued><br>
+      </span>
+      <br>
+      <p>Friends: <br>
+  <a href="./crichard.html"><foaf:knows rdf:resource="#crichard">Crissy Richard, </foaf:knows></a><a href="./nsturgell.html"><foaf:knows rdf:resource="#nsturgell">Nevada Sturgell, </foaf:knows></a><a href="./svenkov.html"><foaf:knows rdf:resource="#svenkov">Stanislav Venkov, </foaf:knows></a>
+      </p>
+    </foaf:Person>
+    <br>
+  
+    <!-- People -->
+    <!-- These are linked to me via the use of the rdf:ID inside foaf:knows elements up in my foaf:Person -->
+  
+  <span class="friend">
+    <foaf:Person rdf:ID="nsturgell">
+      <span class="profile_img_friend">
+        <foaf:img rdf:resource="http://api.randomuser.me/portraits/thumb/women/2.jpg"><img src="http://api.randomuser.me/portraits/thumb/women/2.jpg"/></foaf:img>  
+      </span>
+      <span class="profile_info_friend">
+        <foaf:name>Name: Nevada Sturgell</foaf:name><br>
+        <foaf:mbox_sha1sum>sha1: 1d6a73eca615ed84ad231f3e94d205e90e7dfc7b</foaf:mbox_sha1sum><br>
+        <rdfs:seeAlso rdf:resource="./nsturgellfoaf.rdf" ><a href="./nsturgell.html">FOAF of Nevada Sturgell</a></rdfs:seeAlso>
+      </span>
+    </foaf:Person>
+  </span>
+  
+  <span class="friend">
+    <foaf:Person rdf:ID="svenkov">
+      <span class="profile_img_friend">
+        <foaf:img rdf:resource="http://api.randomuser.me/portraits/thumb/men/0.jpg"><img src="http://api.randomuser.me/portraits/thumb/men/0.jpg"/></foaf:img>  
+      </span>
+      <span class="profile_info_friend">
+        <foaf:name>Name: Stanislav Venkov</foaf:name><br>
+        <foaf:mbox_sha1sum>sha1: 76b78dff8e3a2487ff45eb0887d54bb1d1d3f670</foaf:mbox_sha1sum><br>
+        <rdfs:seeAlso rdf:resource="./svenkovfoaf.rdf" ><a href="./svenkov.html">FOAF of Stanislav Venkov</a></rdfs:seeAlso>
+      </span>
+    </foaf:Person>
+  </span>
+  
+  <span class="friend">
+    <foaf:Person rdf:ID="crichard">
+      <span class="profile_img_friend">
+        <foaf:img rdf:resource="http://api.randomuser.me/portraits/thumb/women/1.jpg"><img src="http://api.randomuser.me/portraits/thumb/women/1.jpg"/></foaf:img>  
+      </span>
+      <span class="profile_info_friend">
+        <foaf:name>Name: Crissy Richard</foaf:name><br>
+        <foaf:mbox_sha1sum>sha1: 3a1ea978ab6e6f01f2935a4fc2d45a1d3aaf1a50</foaf:mbox_sha1sum><br>
+        <rdfs:seeAlso rdf:resource="./crichardfoaf.rdf" ><a href="./crichard.html">FOAF of Crissy Richard</a></rdfs:seeAlso>
+      </span>
+    </foaf:Person>
+  </span>
+  
+
+  </rdf:RDF>
+  </div>
+</body>
+</html>

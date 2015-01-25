@@ -1,0 +1,53 @@
+body {
+  background-color: #dfe3ee;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-weight: bold;
+}
+
+div#generation_form_folder {
+text-align: center;
+width: 50%;
+margin-left: 25%;
+}
+
+label {
+float: left;
+width: 49%;
+margin-top: 5px;
+text-align: left;
+}
+
+input {
+float: right;
+width: 50%;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+
+textarea {
+float: left;
+width: 95%;
+height: 260px;
+background-color: #f7f7f7;
+margin-top: 5px;
+}
+
+#generate_btn {
+margin-left: 42%;
+width: 100px;
+float: left;
+padding: 5px;
+font-weight: bold;
+background-color: #3b5998;
+border-radius: 8px;
+border-color: #dfe3ee;
+color: white;
+cursor: pointer;
+}
+
+h1{
+text-align: center;
+background-color: #3b5998;
+color: white;
+}
+
